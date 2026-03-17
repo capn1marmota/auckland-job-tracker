@@ -112,7 +112,7 @@ with col_left:
 with col_right:
     st.subheader("NZ Job Market Trend (2020–Present)")
     mbie["actual_date"] = pd.to_datetime(mbie["actual_date"])
-    mbie_recent = mbie[mbie["actual_date"] >= "2020-01-01"]
+    mbie_recent = mbie[mbie["actual_date"] >= "2020-01-01"].sort_values("actual_date")
     fig, ax = plt.subplots(figsize=(7, 5))
     ax.plot(mbie_recent["actual_date"], mbie_recent["totals"], color="#dc2626", linewidth=2)
     ax.axhline(y=100, color="gray", linestyle="--", alpha=0.5)
@@ -156,4 +156,4 @@ if selected_skills:
         st.dataframe(match_df.rename(columns={"count": "listings mentioning this skill"}), hide_index=True)
 
 st.divider()
-st.caption("Data refreshes hourly · Source: Adzuna API + MBIE Jobs Online · github.com/yourhandle/auckland-job-tracker")
+st.caption("Data refreshes hourly · Source: Adzuna API + MBIE Jobs Online · github.com/capn1marmota/auckland-job-tracker")
