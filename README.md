@@ -93,7 +93,7 @@ streamlit run app.py
 
 - **[Adzuna NZ API](https://developer.adzuna.com)** — live job listings with salary data
 - **[MBIE Jobs Online](https://www.mbie.govt.nz/business-and-employment/employment-and-skills/labour-market-reports-data-and-analysis/jobs-online/)** — NZ government monthly vacancy index from May 2007 to present
-- **[Trade Me Jobs API](https://developer.trademe.co.nz)** — NZ's largest classifieds platform (production access pending)
+- **Trade Me Jobs API — access not available for research integrations
 
 ---
 
