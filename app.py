@@ -147,7 +147,7 @@ if selected_skills:
     vec = mlb.transform([selected_skills])
     pred = model.predict(vec)[0]
     pred = max(50000, pred)  # floor at realistic minimum
-    st.success(f"Estimated salary range: **${pred:,.0f} — ${pred * 1.15:,.0f}** NZD/year")
+    st.success(f"Estimated salary range: **${pred:,.0f} — ${pred * 1.15:,.0f} NZD/year**")
 
     # Show which of their skills are in demand
     st.caption("Your skills vs market demand:")
